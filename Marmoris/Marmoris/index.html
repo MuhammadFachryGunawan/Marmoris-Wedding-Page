@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmoris</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9162485125.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header class="header">
+    <! logo icon>
+    <a href="#" class="logo">
+        <img src="gambar/logo.jpg" alt="">
+    </a>
+    <div class="nama">Màrmoris</div>
+
+    <!-- item in cart-->  
+    <div class="cart-box">    
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart fa-3x"></i>
+          <form align="right" name="form1" method="post" action="/logout?_method=DELETE">
+            <label class="logoutLblPos">
+            <input name="submit2" type="submit" id="submit2" value="log out">
+            </label>
+        </form> 
+        </div>
+        <div class="whole-cart-window hide">
+          <div class="cart-wrapper">
+          </div>
+          <div class="subtotal">Subtotal: $0.00</div>
+          <div class="checkout">
+            <a href="checkout">Checkout</a>
+          </div>
+        </div>
+      </div>
+      <!-- <form method="POST" action="/logout?_method=DELETE" class="btn" >
+        <button>Logout</button>
+     </form> -->
+      <!-- item in cart-->
+
+    <!--ini buat isi dari navbar-->
+    <nav class="navbar"> 
+        <a href="#home">home</a>
+        <a href="#menu">Venue</a>
+        <a href="#products">Our product</a>
+        <a href="#review">review</a>
+        <a href="#contact">Office</a>
+        <a href="#blogs">blogs</a>
+        <a href="#about">About</a>
+    </nav>
+    
+
+    <div class="icons"> <!--ini buat icon search button-->
+        <div class="" id="search-btn"></div>
+        <div class="" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+</header>
+
+
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <!kata-katanya>
+    <div class="content">
+        <h3>When your <br> dream come true </h3>
+        <p>"And Make Your Wedding Memorable"</p>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> <span>Venue</span> </h1> <!--huruf venue-->
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="gambar/gambar venue/mainvenue1.jpg"">
+            <h3>Marriot Bali Nusa Dua</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> Denpasar, Bali</span></i>
+            </div>            
+            <a href="/visit1" class="btn">About this</a>
+        </div>
+
+        <div class="box">
+            <img src="gambar/gambar venue paket/paket2/mainvenue2.jpg" alt="">
+            <h3>Grand Savero Hotel</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> Kota Bogor, Jawa Barat</span></i>
+            </div>            
+            <a href="/visit2" class="btn">About this</a>
+        </div>
+
+        <div class="box">
+            <img src="gambar/gambar venue paket/paket3/mainvenue3.jpg" alt="">
+            <h3>DoubleTree by Hilton Hotel</h3>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="location">
+                <i class="fa-solid fa-location-dot"> <span> Jakarta Pusat, DKI Jakarta</span></i>
+            </div>            
+            <a href="/visit3" class="btn">About this</a>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+
+<!-- our product -->
+<section class="products" id="products">
+    <h1 class="heading"> <span>Our Product</span> </h1>
+    <!--menampilkan produk-->
+  <section class="shop-section">
+    <div class="card-wrapper">
+      <div data-id="1" class="card-item">
+        <img src="gambar/gambar venue/mainvenue1.jpg" />
+        <div class="details">
+          <h3>paket bronze</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+          <p>
+            <span>
+                Paket Bronze
+            </span>
+
+            <span class="price">Price: $6416</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div data-id="2" class="card-item">
+        <img src="gambar/gambar venue paket/paket2/mainvenue2.jpg" />
+        <div class="details">
+          <h3>paket silver</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+          <p>
+            <span>
+              Paket Silver
+            </span>
+
+            <span class="price">Price: $11870</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div data-id="3" class="card-item">
+        <img src="gambar/gambar venue paket/paket3/mainvenue3.jpg" />
+        <div class="details">
+          <h3>paket gold</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+          <p>
+            <span>
+              Paket Gold
+            </span>
+            <span class="price">Price: $14629</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+ 
+
+
+
+
+</section>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="gambar/gambar reviewer/giyat.jpg" class="user" alt="">
+            <p>WO nya keren,asik,murah,dan bener bener wah deh,jadi pengen nikah trus-trus an</p>
+            <h3>Ghiyat</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="gambar/gambar reviewer/sam.jpeg" class="user" alt="">
+           
+            <p>WO nya keren rapih salut dah pokonya</p>
+            <h3>Syamaidzar</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="gambar/gambar reviewer/nia.png" class="user" alt="">
+            <p>Im happy now</p>
+            <h3>Nia</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Our Office </h1>
+
+    <div class="row">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.307454333128!2d107.62949135028275!3d-6.973006994937771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sUniversitas%20Telkom!5e0!3m2!1sid!2sid!4v1667568139580!5m2!1sid!2sid" width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="gambar/gambarblog/1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">6 Cara Memilih Pasangan Hidup yang Tepat Sebelum Menikah</a>
+                <span>by Gayuh Tri Pinjungwati / 22 Okt 2021</span>
+                <p>Kehadiran seseorang dalam hidup memang dinanti-nanti setiap orang. Kamu mendambakan sosok yang bisa menyemangatimu di saat menangis dan yang mengerti kamu. Cinta adalah ikatan yang menghubungkan kita dengan orang yang tepat, tetapi menemukan pasangan hidup bisa sangat sulit.</p>
+                <a href="https://www.fimela.com/relationship/read/4689865/6-cara-memilih-pasangan-hidup-yang-tepat-sebelum-menikah" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="gambar/gambarblog/2.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Pernikahan Fantastis Gadis di Pinrang, Panai Rp 5 M-Datangkan 7 Artis</a>
+                <span>by detikSulsel / 01 Agu 2022</span>
+                <p>Pernikahan dengan mahar fantastis kembali terjadi di Sulawesi Selatan (Sulsel). Kali ini gadis Bugis asal Kabupaten Pinrang dilamar dengan panai hingga Rp 5 miliar dan mendatangkan 7 artis ibukota dalam resepsi pernikahan</p>
+                <a href="https://www.detik.com/sulsel/berita/d-6209434/pernikahan-fantastis-gadis-di-pinrang-panai-rp-5-m-datangkan-7-artis" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="gambar/gambarblog/3.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">10 Cara & Tips Memilih Baju Pengantin yang Pas Buat Kamu!</a>
+                <span>by Aini Dian / March 1, 2021</span>
+                <p>Pernikahan merupakan salah satu momen penting di dalam hidup. Pastinya setiap orang menginginkan pernikahan hanya sekali seumur hidup. Momen sakral ini biasanya dipersiapkan dengan matang, salah satunya adalah menyiapkan gaun yang cocok dengan pengantin.</p>
+                <a href="https://mamapapa.id/cara-memilih-baju-pernikahan/" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="gambar/about.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Our Wedding Organizer Project</h3>
+            <p>Thank You<br> :)</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-instagram"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-linkedin"></a>
+        <a href="https://www.instagram.com/fahri.gnw/" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">home</a>
+        <a href="#menu">Venue</a>
+        <a href="#products">Our product</a>
+        <a href="#review">review</a>
+        <a href="#contact">Office</a>
+        <a href="#blogs">blogs</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="credit">dibuat oleh <span> Kelompok 2 </span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
